@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="true">
+  <parameter name="browser" value="firefox"/>
+  <test name="Test1(failed)" parallel="true">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.flipkart_test.FlipkartLogin">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+          <include name="Precondition"/>
+          <include name="Precondition"/>
+        </methods>
+      </class> <!-- com.flipkart_test.FlipkartLogin -->
+      <class name="com.flipkart_test.MobilePageTest">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+          <include name="VerifyMobilePageBySearch"/>
+          <include name="VerifyCartPage"/>
+          <include name="VerifyOtherBrandWith4GB"/>
+          <include name="Precondition"/>
+          <include name="Precondition"/>
+          <include name="VerifyBrandCheckbox"/>
+          <include name="getFilteredItems"/>
+          <include name="VerifyFilteredMotoList"/>
+        </methods>
+      </class> <!-- com.flipkart_test.MobilePageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="true">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.flipkart_test.FlipkartLogin">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+          <include name="Precondition"/>
+          <include name="Precondition"/>
+        </methods>
+      </class> <!-- com.flipkart_test.FlipkartLogin -->
+      <class name="com.flipkart_test.MobilePageTest">
+        <methods>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+          <include name="VerifyMobilePageBySearch"/>
+          <include name="VerifyCartPage"/>
+          <include name="VerifyOtherBrandWith4GB"/>
+          <include name="Precondition"/>
+          <include name="Precondition"/>
+          <include name="ClickOnMobilePage"/>
+          <include name="VerifyBrandCheckbox"/>
+          <include name="getFilteredItems"/>
+          <include name="VerifyFilteredMotoList"/>
+        </methods>
+      </class> <!-- com.flipkart_test.MobilePageTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
